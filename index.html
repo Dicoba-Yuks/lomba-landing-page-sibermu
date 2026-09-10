@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biro Kemahasiswaan dan AIK - SiberMu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav>
+      <div class="logo">
+        <a href="#beranda" style="text-decoration: none; color: inherit">
+          <span data-lang="nav_logo">SiberMu | Kemahasiswaan & AIK</span>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#beranda" data-lang="nav_home" class="nav-item">Beranda</a>
+        </li>
+        <li>
+          <a href="#kemahasiswaan" data-lang="nav_mhs" class="nav-item"
+            >Kemahasiswaan</a
+          >
+        </li>
+        <li>
+          <a href="#aik" data-lang="nav_aik" class="nav-item"
+            >Al-Islam & Kemuhammadiyahan</a
+          >
+        </li>
+        <li class="nav-controls">
+          <button id="theme-toggle" class="control-btn" title="Ubah Tema">
+            🌙
+          </button>
+          <select id="lang-toggle" class="control-select">
+            <option value="id">ID</option>
+            <option value="en">EN</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="beranda" class="hero-section">
+      <div class="hero-content">
+        <h1 data-lang="hero_title">
+          Biro AIK dan <span class="highlight">Kemahasiswaan</span>
+        </h1>
+        <p data-lang="hero_desc">
+          Mengembangkan mahasiswa yang unggul dalam akademik, inovatif, dan
+          berlandaskan nilai-nilai Islam Kemuhammadiyahan.
+        </p>
+        <a href="#kemahasiswaan" class="btn-primary" data-lang="hero_btn"
+          >Mulai Langkah Besarmu</a
+        >
+      </div>
+    </header>
+
+    <!-- Section Kemahasiswaan -->
+    <section id="kemahasiswaan" class="content-section">
+      <div class="section-header">
+        <h2 data-lang="sec1_title">
+          Fokus <span class="highlight-text">Kemahasiswaan</span>
+        </h2>
+        <p data-lang="sec1_desc">
+          Mendukung penuh pengembangan potensi, minat, bakat, dan kesejahteraan
+          mahasiswa Universitas Siber Muhammadiyah.
+        </p>
+      </div>
+
+      <div class="grid-container">
+        <div class="card">
+          <div class="card-icon">🏛️</div>
+          <h3 data-lang="mhs_c1_title">Organisasi Mahasiswa</h3>
+          <p data-lang="mhs_c1_desc">
+            Wadah melatih kepemimpinan, manajerial, dan kolaborasi antar
+            mahasiswa melalui BEM dan DPM.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3 data-lang="mhs_c2_title">Unit Kegiatan Mahasiswa</h3>
+          <p data-lang="mhs_c2_desc">
+            Penyaluran minat dan bakat mahasiswa dalam berbagai bidang mulai
+            dari olahraga, seni, hingga keilmuan.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏆</div>
+          <h3 data-lang="mhs_c3_title">Prestasi Mahasiswa</h3>
+          <p data-lang="mhs_c3_desc">
+            Apresiasi dan dukungan penuh bagi mahasiswa yang berlaga di
+            kompetisi tingkat nasional maupun internasional.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤝</div>
+          <h3 data-lang="mhs_c4_title">Layanan Mahasiswa</h3>
+          <p data-lang="mhs_c4_desc">
+            Fasilitas pendampingan akademik, beasiswa, konseling, dan
+            pengembangan karir untuk masa depan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section AIK -->
+    <section id="aik" class="content-section">
+      <div class="section-header">
+        <h2 data-lang="sec2_title">
+          Fokus <span class="highlight-text">Al-Islam & Kemuhammadiyahan</span>
+        </h2>
+        <p data-lang="sec2_desc">
+          Membentuk karakter mahasiswa yang berakhlak mulia melalui
+          internalisasi nilai-nilai Islam Kemuhammadiyahan.
+        </p>
+      </div>
+
+      <div class="grid-container">
+        <div class="card">
+          <div class="card-icon">🕌</div>
+          <h3 data-lang="aik_c1_title">Kegiatan Keagamaan</h3>
+          <p data-lang="aik_c1_desc">
+            Fasilitasi ibadah, pembinaan baca tulis Al-Qur'an, dan rutinitas
+            keagamaan untuk civitas akademika.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📖</div>
+          <h3 data-lang="aik_c2_title">Kajian Keislaman</h3>
+          <p data-lang="aik_c2_desc">
+            Forum diskusi dan kajian tematik untuk mendalami pemahaman agama dan
+            penerapannya di masa kini.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📢</div>
+          <h3 data-lang="aik_c3_title">Syiar Islam</h3>
+          <p data-lang="aik_c3_desc">
+            Penyebaran dakwah dan kebaikan melalui media kreatif digital,
+            seminar, serta peringatan hari besar Islam.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌟</div>
+          <h3 data-lang="aik_c4_title">Nilai Kemuhammadiyahan</h3>
+          <p data-lang="aik_c4_desc">
+            Integrasi etos keilmuan, kemandirian, dan kepedulian sosial dalam
+            kehidupan sehari-hari di lingkungan kampus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-address">
+          <h4 data-lang="footer_title">SiberMu | Kemahasiswaan & AIK</h4>
+          <p data-lang="footer_address">
+            Kampus Pusat<br />
+            Universitas Siber Muhammadiyah (SiberMu)<br />
+            Jalan HOS Cokroaminoto Nomor 17, RT 53 / RW 12<br />
+            Kota Yogyakarta, Daerah Istimewa Yogyakarta 55253
+          </p>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://www.facebook.com/sibermu"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://x.com/SibermuOfficial"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none"
+            ><span
+              style="
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 1.2rem;
+              "
+              >𝕏</span
+            ></a
+          >
+          <a
+            href="https://www.linkedin.com/school/sibermu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/c/sibermu"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/sibermu"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=6285179794147"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-lang="footer_copy">
+          &copy; 2026 Universitas Siber Muhammadiyah. Dibuat untuk Lomba
+          Kreativitas Digital.
+        </p>
+        <p
+          data-lang="footer_credits"
+          style="font-size: 0.8rem; opacity: 0.8; margin-top: 5px"
+        >
+          Sumber Aset: Font dari Google Fonts (Inter), Ikon dari FontAwesome,
+          Logo/Identitas dari Universitas Siber Muhammadiyah.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
