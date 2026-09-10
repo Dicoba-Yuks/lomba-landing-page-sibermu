@@ -20,7 +20,6 @@
     --card-text: #b0b0b0;
 }
 
-/* --- PERBAIKAN KONTRAS TEKS DI DARK MODE --- */
 [data-theme="dark"] .section-header h2 {
     color: #ffffff; 
 }
@@ -41,18 +40,10 @@
     font-family: 'Inter', sans-serif;
 }
 
-/* PERBAIKAN UTAMA: Mencegah FontAwesome tertimpa font Inter */
-.fab {
-    font-family: "Font Awesome 6 Brands" !important;
-}
-.fas {
-    font-family: "Font Awesome 6 Free" !important;
-    font-weight: 900;
-}
-
 html {
     scroll-behavior: smooth;
     width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -61,10 +52,10 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     width: 100%;
     position: relative;
-    overflow-x: clip;
+    overflow-x: hidden;
 }
 
-/* --- NAVIGASI UTAMA (DESKTOP & UMUM) --- */
+/* --- NAVIGASI UTAMA (DESKTOP) --- */
 nav {
     display: flex;
     justify-content: space-between;
@@ -208,7 +199,7 @@ nav {
 }
 
 .section-header h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: var(--primary-navy);
     margin-bottom: 10px;
 }
@@ -313,12 +304,12 @@ footer p {
 
 .footer-social {
     display: flex;
-    gap: 15px;
+    gap: 12px;
 }
 
 .footer-social a {
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
     text-decoration: none;
 }
@@ -334,23 +325,30 @@ footer p {
     width: 100%;
 }
 
-/* --- RESPONSIVE MOBILE --- */
+/* --- PENGATURAN KHUSUS MOBILE (HP) --- */
 @media (max-width: 768px) {
+    /* Mendorong Hero Section turun agar tidak tertutup navbar fixed */
+    body {
+        padding-top: 115px; 
+    }
+
+    /* Navbar terkunci di atas selamanya (Fixed Position) */
     nav {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 12px 15px;
+        padding: 10px 12px;
         width: 100%;
-        position: sticky;
+        position: fixed; /* Dijamin tidak akan ikut ter-scroll */
         top: 0;
-        z-index: 9999;
+        left: 0;
+        z-index: 99999;
     }
 
     .logo {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         max-width: 42%;
-        line-height: 1.25;
+        line-height: 1.2;
         margin-top: 2px;
     }
 
@@ -361,7 +359,7 @@ footer p {
     .nav-links {
         flex-direction: column;
         align-items: flex-end; 
-        gap: 5px;
+        gap: 4px;
         width: 58%;
     }
 
@@ -371,27 +369,29 @@ footer p {
         width: 100%;
     }
 
+    /* Ukuran font tombol dikecilkan dan diatur agar teks panjang tidak terpotong */
     .nav-links .nav-item {
-        font-size: 0.75rem;
-        padding: 5px 10px;
+        font-size: 0.7rem;
+        padding: 4px 8px;
         text-align: right;
         width: auto;
         max-width: 100%;
         white-space: normal;
-        line-height: 1.2;
+        line-height: 1.15;
+        word-break: break-word;
     }
 
     .hero-section {
-        padding: 60px 15px;
+        padding: 40px 15px;
         width: 100%;
     }
 
     .hero-section h1 {
-        font-size: 1.7rem; 
+        font-size: 1.6rem; 
     }
 
     .content-section {
-        padding: 50px 15px;
+        padding: 40px 15px;
         width: 100%;
     }
 
@@ -407,7 +407,12 @@ footer p {
     }
 
     .nav-controls {
-        margin-top: 3px;
+        margin-top: 2px;
         justify-content: flex-end;
+    }
+
+    .control-btn, .control-select {
+        font-size: 0.75rem;
+        padding: 3px 6px;
     }
 }
